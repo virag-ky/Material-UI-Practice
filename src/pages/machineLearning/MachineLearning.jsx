@@ -1,5 +1,11 @@
+import Grid from '@mui/material/Grid';
+
 const MachineLearning = () => {
-  return <div>This is a machine learning page.</div>;
+  return (
+    <Grid item sx={8}>
+      This is a machine learning page.
+    </Grid>
+  );
 };
 
 export default MachineLearning;

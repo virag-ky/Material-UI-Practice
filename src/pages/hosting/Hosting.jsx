@@ -1,5 +1,11 @@
+import Grid from '@mui/material/Grid';
+
 const Hosting = () => {
-  return <div>This is a hosting page.</div>;
+  return (
+    <Grid item sx={8}>
+      This is a hosting page.
+    </Grid>
+  );
 };
 
 export default Hosting;
