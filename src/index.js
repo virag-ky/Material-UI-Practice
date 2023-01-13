@@ -9,6 +9,8 @@ import Storage from './pages/storage/Storage';
 import Functions from './pages/functions/Functions';
 import Hosting from './pages/hosting/Hosting';
 import Database from './pages/database/Database';
+import { ThemeProvider } from '@mui/material/styles';
+import { dashboardTheme } from './dashboardTheme';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +49,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={dashboardTheme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
